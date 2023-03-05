@@ -10,11 +10,23 @@ body {
 }
 
 header {
-    color: var(--text-color);
+    color: var(--main-text-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    height: 176px;
+    padding: 88.65px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 51px;
+    font-size: var(--navLinks-fs);
+}
+
+h1 {
+    font-size: var(--logo-fs);
+    font-weight: var(--logo-fw);
 }
 
 a {
@@ -22,10 +34,36 @@ a {
     color: var(--text-color);
 }
 
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+}
+
+.about-section {
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    font-size: var(--about-fs);
+    text-align: center;
+    width: 50%;
+}
+
+.section-name {
+    display: flex;
+    justify-content: center;
+    color: var(--main-text-color);
+    font-size: var(--section-fs);
+
+}
+
 :root {
     --main-bg-color: #000000;
-    --text-color: #ffffff;
+    --main-text-color: #ffffff;
     --main-font: Inter;
     --logo-fw: 600;
-    --logo-fs: 22.15px;
+    --logo-fs: 22.1541px;
+    --section-fs: 96px;
+    --navLinks-fs: 22.15px;
+    --about-fs: 34.84px;
 }
