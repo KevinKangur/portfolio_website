@@ -21,12 +21,11 @@ header {
 .navLinks {
     display: flex;
     gap: 51px;
-    font-size: var(--navLinks-fs);
+    font-size: 22.15px;
 }
 
-h1 {
-    font-size: var(--logo-fs);
-    font-weight: var(--logo-fw);
+.logo {
+    font-size: 22.1541px;
 }
 
 a {
@@ -34,36 +33,183 @@ a {
     color: var(--text-color);
 }
 
-.about {
+.description {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 580px;
 }
 
-.about-section {
-    font-family: var(--main-font);
+.description-section {
     color: var(--main-text-color);
-    font-size: var(--about-fs);
+    font-size: 34.84px;
     text-align: center;
     width: 50%;
 }
 
-.section-name {
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    height: 242px;
+    color: var(--main-text-color);
+    font-size: var(--section-fs);
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+}
+
+.right-pictures {
+    display: grid;
+    justify-items: end;
+}
+
+.right-pictures, .left-pictures {
+    display: grid;
+    gap: 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 1238px;
+}
+
+.about-section {
     display: flex;
     justify-content: center;
     color: var(--main-text-color);
     font-size: var(--section-fs);
+}
 
+.about-text {
+    display: flex;
+    align-self: center;
+    width: 1118px;
+    color: var(--main-text-color);
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    padding: 56px;
+}
+
+.about-pictures {
+    display: flex;
+    justify-content: center;
+}
+
+.services {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 1568px;
+}
+
+.services-section {
+    display: flex;
+    justify-content: center;
+    color: var(--main-text-color);
+    font-size: var(--section-fs);
+    margin: 98px;
+}
+
+.services-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.web-development {
+    background-color: #f2f2f2;
+    width: 560px;
+    height: 518px;
+}
+
+.graphic-design {
+    background-color: #c0c0c0;
+    width: 560px;
+    height: 518px;
+}
+
+.product-design {
+    background-color: #e2e2e2;
+    width: 560px;
+    height: 518px;
+}
+
+.mobile-app {
+    background-color: #b4b4b4;
+    width: 560px;
+    height: 518px;
+}
+
+.left-services {
+    display: grid;
+    justify-items: end;
+}
+
+.service-name {
+    font-size: var(--services-name-fs);
+    font-weight: var(--services-name-fw);
+    padding: 26px 32px;
+    width: 50%;
+}
+
+.service-text {
+    font-size: var(--services-text-fs);
+    margin-left: 32px;
+    width: 494px;
+}
+
+.quote {
+    font-size: var(--services-text-fs);
+    margin: 56px 32px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 922px;
+    color: var(--main-text-color);
+    font-size: 64px;
+}
+
+.contact-section {
+    font-size: var(--section-fs);
+    margin: 120px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 22px 90px;
+    background-color: #ffffff;
+}
+
+.company {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.terms {
+    display: flex;
+    gap: 98px;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 :root {
     --main-bg-color: #000000;
     --main-text-color: #ffffff;
     --main-font: Inter;
-    --logo-fw: 600;
-    --logo-fs: 22.1541px;
     --section-fs: 96px;
-    --navLinks-fs: 22.15px;
-    --about-fs: 34.84px;
+    --services-name-fs: 56px;
+    --services-name-fw: 700;
+    --services-text-fs: 26px;
 }
