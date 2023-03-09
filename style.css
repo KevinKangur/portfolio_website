@@ -24,8 +24,12 @@ header {
     font-size: 22.15px;
 }
 
+.burger {
+    display: none;
+}
+
 .logo {
-    font-size: 22.1541px;
+    font-size: 24px;
 }
 
 a {
@@ -61,14 +65,17 @@ a {
     gap: 0;
 }
 
+.pictures img {
+    display: flex;
+}
+
+.pictures a {
+    height: 545px;
+}
+
 .right-pictures {
     display: grid;
     justify-items: end;
-}
-
-.right-pictures, .left-pictures {
-    display: grid;
-    gap: 0;
 }
 
 .about {
@@ -204,6 +211,146 @@ footer {
     font-size: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    header {
+        height: 100px;
+        padding: 36px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        font-size: 26px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .description {
+        height: 290px;
+    }
+
+    .description-section {
+        font-size: 20px;
+        width: 65%;
+    }
+
+    .portfolio-section {
+        font-size: 50px;
+        height: 120px;
+    }
+
+    .pictures {
+        display: flex;
+        overflow-y: hidden;
+        gap: 20px;
+    }
+
+    .right-pictures img, .left-pictures img, .pictures a {
+        width: 310px;
+        height: 299px;
+    }
+
+    .right-pictures, .left-pictures {
+        display: flex;
+        gap: 20px;
+    }
+
+    .about {
+        height: 700px;
+    }
+
+    .about-section {
+        font-size: 50px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .about-pictures {
+        gap: 14px;
+        overflow-y: hidden;
+    }
+
+    .about-pictures img {
+        width: 160px;
+        height: 215px;
+    }
+
+    .services {
+        height: 600px;
+    }
+
+    .services-section {
+        font-size: 50px;
+    }
+
+    .services-about {
+        overflow-y: hidden;
+        gap: 12px;
+    }
+
+    .left-services, .right-services {
+        display: flex;
+        gap: 12px;
+    }
+
+    .web-development, .product-design, .graphic-design, .mobile-app {
+        width: 280px;
+        height: 254px;
+    }
+
+    .service-name {
+        font-size: 24px;
+        padding: 12px;
+    }
+
+    .service-text  {
+        font-size: 14px;
+        width: 200px;
+        margin-left: 14px;
+    }
+
+    .quote {
+        font-size: 14px;
+        margin: 12px;
+    }
+
+    .contact {
+        height: 500px;
+    }
+
+    .contact-section {
+        font-size: 50px;
+        margin: 80px;
+    }
+
+    .email, .tel {
+        font-size: 36px;
+    }
+
+    footer {
+        display: flex;
+        background-color: var(--main-bg-color);
+        justify-content: center;
+        height: 120px;
+    }
+
+    .company {
+        color: var(--main-text-color);
+    }
+
+    .terms {
+        display: none;
+    }
+}
+
 /* 2nd page */
 
 .back-button {
@@ -229,7 +376,7 @@ footer {
 
 .products-section {
     color: var(--main-text-color);
-    font-size: var(--section-fs);
+    font-size: 82px;
     text-align: center;
     width: 900px;
     margin: 150px;
@@ -247,6 +394,81 @@ footer {
     font-size: 30px;
     width: 1020px;
     margin: 100px;
+}
+
+.more-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 98px;
+    margin: 200px;
+}
+
+.left-side-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 178px;
+}
+
+.right-side-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 270px;
+}
+
+.about-product-left, .about-product-right {
+    color: var(--main-text-color);
+    font-weight: 300;
+    font-size: 30px;
+    width: 440px;
+}
+
+.about-product-left {
+    text-align: right;
+}
+
+.customer-review {
+    margin: 200px;
+}
+
+.review-section {
+    color: var(--main-text-color);
+    font-size: 76px;
+    text-align: center;
+    margin: 90px;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+}
+
+.review-about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 80px;
+
+}
+
+.review-name {
+    color: var(--main-text-color);
+    font-size: 60px;
+    width: 716px;
+}
+
+.review-text {
+    color: var(--main-text-color);
+    font-size: 30px;
+    font-weight: 300;
+    width: 716px;
+}
+
+.reviewer-name {
+    color: var(--main-text-color);
+    font-size: 22px;
+    font-weight: 300;
 }
 
 :root {
