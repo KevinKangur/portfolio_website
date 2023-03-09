@@ -58,7 +58,7 @@ a {
 .pictures {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 0;
+    gap: 0;
 }
 
 .right-pictures {
@@ -202,6 +202,51 @@ footer {
     gap: 98px;
     font-weight: 300;
     font-size: 20px;
+}
+
+/* 2nd page */
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.products-section {
+    color: var(--main-text-color);
+    font-size: var(--section-fs);
+    text-align: center;
+    width: 900px;
+    margin: 150px;
+}
+
+.camera-about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-camera {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 30px;
+    width: 1020px;
+    margin: 100px;
 }
 
 :root {
