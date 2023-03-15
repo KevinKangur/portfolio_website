@@ -28,6 +28,10 @@ header {
     display: none;
 }
 
+.dropdownContent {
+    display: none;
+}
+
 .logo {
     font-size: 24px;
 }
