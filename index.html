@@ -14,12 +14,18 @@
         <h1 class="logo">LOGO</h1>
         <div class="navLinks">
             <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="products.html">About</a>
             <a href="#">Reviews</a>
             <a href="#">Contact</a>
         </div>
+        <div class="dropdownContent" id="dropdownContent">
+            <a href="#" class="links">Home</a>
+            <a href="products.html" class="links">About</a>
+            <a href="#" class="links">Reviews</a>
+            <a href="#" class="links">Contact</a>
+        </div>
         <div class="burger">
-            <i class="fa fa-bars"></i>
+            <button class="dropdownButton" id="dropdownButton"><i class="fa fa-bars"></i></button>
         </div>
     </header>
 
@@ -30,16 +36,12 @@
     <div class="portfolio">
         <p class="portfolio-section">Portfolio</p>
         <div class="pictures">
-            <div class="right-pictures">
-                <a href="products.html"><img src="https://i.imgur.com/luysMSr.png" alt="camera"></a>
-                <img src="https://i.imgur.com/btezsn9.png" alt="razor">
-                <img src="https://i.imgur.com/R2nKZq6.png" alt="speaker">
-            </div>
-            <div class="left-pictures">
-                <img src="https://i.imgur.com/dlrhebS.png" alt="headphones">
-                <img src="https://i.imgur.com/Y09RxPq.png" alt="lens">
-                <img src="https://i.imgur.com/5ZCs6Ne.png" alt="polaroid-camera">
-            </div>
+            <img src="https://i.imgur.com/luysMSr.png" alt="camera" class="camera">
+            <img src="https://i.imgur.com/dlrhebS.png" alt="headphones" class="headphones">
+            <img src="https://i.imgur.com/btezsn9.png" alt="razor" class="razor">
+            <img src="https://i.imgur.com/Y09RxPq.png" alt="lens" class="lens">
+            <img src="https://i.imgur.com/R2nKZq6.png" alt="speaker" class="speaker">
+            <img src="https://i.imgur.com/5ZCs6Ne.png" alt="polaroid-camera" class="polaroid-camera">
         </div>
     </div>
 
@@ -57,9 +59,13 @@
     <div class="services">
         <p class="services-section">Services</p>
         <div class="services-about">
-            <div class="left-services">
                 <div class="web-development">
                     <p class="service-name">Web Development</p>
+                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
+                    <p class="quote">Get a quote</p>
+                </div>
+                <div class="product-design">
+                    <p class="service-name">Product Design</p>
                     <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
                     <p class="quote">Get a quote</p>
                 </div>
@@ -67,21 +73,12 @@
                     <p class="service-name">Graphic Design</p>
                     <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
                     <p class="quote">Get a quote</p>
-                </div>
-            </div>
-            
-            <div class="right-services">
-                <div class="product-design">
-                    <p class="service-name">Product Design</p>
-                    <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
-                    <p class="quote">Get a quote</p>
-                </div>
+                </div>       
                 <div class="mobile-app">
                     <p class="service-name">Mobile App</p>
                     <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci odio amet consectetur volutpat sodales a lectus a. Et gravida tincidunt morbi habitasse. Ultrices magna laoreet ornare</p>
                     <p class="quote">Get a quote</p>
                 </div>
-            </div>
         </div>
     </div>
 
@@ -98,5 +95,6 @@
             <p>Privacy Policy</p>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

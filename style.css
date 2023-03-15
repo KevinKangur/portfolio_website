@@ -61,21 +61,42 @@ a {
 
 .pictures {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-.pictures img {
-    display: flex;
+.camera {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.headphones {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.razor {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.lens {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.speaker {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.polaroid-camera {
+    grid-column: 3;
+    grid-row: 3;
 }
 
 .pictures a {
     height: 545px;
-}
-
-.right-pictures {
-    display: grid;
-    justify-items: end;
 }
 
 .about {
@@ -125,54 +146,56 @@ a {
 
 .services-about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .web-development {
+    grid-column: 2;
+    grid-row: 1;
     background-color: #f2f2f2;
-    width: 560px;
-    height: 518px;
-}
-
-.graphic-design {
-    background-color: #c0c0c0;
-    width: 560px;
-    height: 518px;
 }
 
 .product-design {
+    grid-column: 3;
+    grid-row: 1;
     background-color: #e2e2e2;
-    width: 560px;
-    height: 518px;
+}
+
+.graphic-design {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #c0c0c0;
 }
 
 .mobile-app {
+    grid-column: 3;
+    grid-row: 2;
     background-color: #b4b4b4;
-    width: 560px;
-    height: 518px;
 }
 
-.left-services {
-    display: grid;
-    justify-items: end;
+.web-development, .product-design, .graphic-design, .mobile-app {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 30px;
+    width: 560px;
+    height: 518px;
 }
 
 .service-name {
     font-size: var(--services-name-fs);
     font-weight: var(--services-name-fw);
-    padding: 26px 32px;
-    width: 50%;
+    width: 50%; 
 }
 
 .service-text {
     font-size: var(--services-text-fs);
-    margin-left: 32px;
-    width: 494px;
+    width: 95%;
 }
 
 .quote {
     font-size: var(--services-text-fs);
-    margin: 56px 32px;
 }
 
 .contact {
@@ -246,18 +269,13 @@ footer {
 
     .pictures {
         display: flex;
-        overflow-y: hidden;
+        overflow-x: auto;
         gap: 20px;
     }
 
-    .right-pictures img, .left-pictures img, .pictures a {
+    .pictures img, .pictures a {
         width: 310px;
         height: 299px;
-    }
-
-    .right-pictures, .left-pictures {
-        display: flex;
-        gap: 20px;
     }
 
     .about {
@@ -274,8 +292,10 @@ footer {
     }
 
     .about-pictures {
+        display: flex;
+        justify-content: start;
         gap: 14px;
-        overflow-y: hidden;
+        overflow-x: auto;
     }
 
     .about-pictures img {
@@ -292,34 +312,28 @@ footer {
     }
 
     .services-about {
-        overflow-y: hidden;
-        gap: 12px;
-    }
-
-    .left-services, .right-services {
         display: flex;
+        overflow-x: auto;
         gap: 12px;
     }
 
     .web-development, .product-design, .graphic-design, .mobile-app {
-        width: 280px;
+        min-width: 280px;
         height: 254px;
+        padding: 14px;
+        gap: 20px;
     }
 
     .service-name {
         font-size: 24px;
-        padding: 12px;
     }
 
     .service-text  {
         font-size: 14px;
-        width: 200px;
-        margin-left: 14px;
     }
 
     .quote {
         font-size: 14px;
-        margin: 12px;
     }
 
     .contact {
@@ -348,6 +362,31 @@ footer {
 
     .terms {
         display: none;
+    }
+
+    .fa {
+        color: #ffffff;
+    }
+
+    .dropdownButton {
+        background: none;
+        border: none;
+        font-size: 24px;
+    }
+    
+    .dropdownContent {
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background-color: #000000;
+        transition: 0.25s;
+        overflow: hidden;
+    }
+
+    .links {
+        font-size: 20px;
+        display: flex;
+        padding: 10px;
     }
 }
 
